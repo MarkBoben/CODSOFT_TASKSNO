@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember & Ash — Small-Batch Hot Sauce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <svg class="logo-mark" viewBox="0 0 44 52" aria-hidden="true">
+        <polygon class="mark-outer" points="22,4 6,36 38,36"/>
+        <polygon class="mark-mid" points="22,15 12,36 32,36"/>
+        <polygon class="mark-tip" points="22,24 17,36 27,36"/>
+        <rect class="mark-base" x="9" y="42" width="26" height="4" rx="2"/>
+      </svg>
+      <span class="logo-word">Ember <span class="amp">&amp;</span> Ash</span>
+    </a>
+    <nav class="nav">
+      <a href="#story">Story</a>
+      <a href="#lineup">Lineup</a>
+      <a href="#ritual">How to Use</a>
+      <a href="#footer" class="nav-cta">Get the Sampler</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <svg class="hero-flame-bg" viewBox="0 0 44 52" aria-hidden="true">
+      <polygon class="mark-outer" points="22,4 6,36 38,36"/>
+      <polygon class="mark-mid" points="22,15 12,36 32,36"/>
+      <polygon class="mark-tip" points="22,24 17,36 27,36"/>
+      <rect class="mark-base" x="9" y="42" width="26" height="4" rx="2"/>
+    </svg>
+    <div class="hero-inner">
+      <p class="eyebrow">Small batch &middot; Fermented &middot; No shortcuts</p>
+      <h1 class="hero-title">Heat is not<br>an accident.</h1>
+      <p class="hero-sub">Every bottle is fermented for six weeks, tasted by hand, and rated on a scale we don't round up. Five sauces. One honest number each.</p>
+      <div class="hero-actions">
+        <a href="#lineup" class="btn btn-primary">See the Lineup</a>
+        <a href="#story" class="btn btn-ghost">Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="story-inner">
+      <div class="story-copy">
+        <p class="section-label">The Story</p>
+        <h2>Started in a garage.<br>Still made like one.</h2>
+        <p>Ember &amp; Ash began in 2019 with three peppers, a stockpot, and a landlord who was not thrilled about the smell. We haven't changed much since — we still ferment every mash by hand, still taste every batch before it's bottled, and still refuse to tell you a sauce is mild when it isn't.</p>
+        <p>No fillers. No shortcuts. No sauce leaves the kitchen until it earns its label.</p>
+      </div>
+      <div class="story-stats">
+        <div class="stat">
+          <span class="stat-num">6</span>
+          <span class="stat-label">weeks fermented</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">hand bottled</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">artificial anything</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINEUP -->
+  <section class="lineup" id="lineup">
+    <div class="lineup-inner">
+      <p class="section-label light">The Lineup</p>
+      <h2 class="lineup-title">Five sauces. No guessing.</h2>
+      <p class="lineup-sub">Each gauge reflects the sauce's actual Scoville rating — not a marketing suggestion.</p>
+
+      <div class="sauce-grid">
+
+        <article class="sauce-card" data-shu="500" data-max="120000">
+          <div class="sauce-top">
+            <h3>First Light</h3>
+            <span class="sauce-price">$11</span>
+          </div>
+          <p class="sauce-desc">Green mango, coriander seed, jalapeño. Bright and grassy — built for eggs.</p>
+          <div class="gauge">
+            <div class="gauge-track"><div class="gauge-fill"></div></div>
+            <div class="gauge-meta">
+              <span class="gauge-shu-label">500 SHU</span>
+              <span class="gauge-word">Mild</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="sauce-card" data-shu="8000" data-max="120000">
+          <div class="sauce-top">
+            <h3>Smokehouse</h3>
+            <span class="sauce-price">$12</span>
+          </div>
+          <p class="sauce-desc">Fresno and chipotle, slow-smoked over oak. Deep, round, built for brisket.</p>
+          <div class="gauge">
+            <div class="gauge-track"><div class="gauge-fill"></div></div>
+            <div class="gauge-meta">
+              <span class="gauge-shu-label">8,000 SHU</span>
+              <span class="gauge-word">Medium</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="sauce-card" data-shu="35000" data-max="120000">
+          <div class="sauce-top">
+            <h3>Ash Line</h3>
+            <span class="sauce-price">$13</span>
+          </div>
+          <p class="sauce-desc">Cayenne, roasted garlic, black cardamom. Our best seller — and our warning label.</p>
+          <div class="gauge">
+            <div class="gauge-track"><div class="gauge-fill"></div></div>
+            <div class="gauge-meta">
+              <span class="gauge-shu-label">35,000 SHU</span>
+              <span class="gauge-word">Hot</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="sauce-card" data-shu="72000" data-max="120000">
+          <div class="sauce-top">
+            <h3>Red Coal</h3>
+            <span class="sauce-price">$14</span>
+          </div>
+          <p class="sauce-desc">Scotch bonnet and habanero, aged in oak barrels. Fruit up front, fire on the finish.</p>
+          <div class="gauge">
+            <div class="gauge-track"><div class="gauge-fill"></div></div>
+            <div class="gauge-meta">
+              <span class="gauge-shu-label">72,000 SHU</span>
+              <span class="gauge-word">Very Hot</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="sauce-card sauce-card--extreme" data-shu="112000" data-max="120000">
+          <div class="sauce-top">
+            <h3>Last Ember</h3>
+            <span class="sauce-price">$16</span>
+          </div>
+          <p class="sauce-desc">Carolina Reaper, ghost pepper, mustard seed. One drop first. We mean it.</p>
+          <div class="gauge">
+            <div class="gauge-track"><div class="gauge-fill"></div></div>
+            <div class="gauge-meta">
+              <span class="gauge-shu-label">112,000 SHU</span>
+              <span class="gauge-word">Extreme</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RITUAL / HOW TO USE -->
+  <section class="ritual" id="ritual">
+    <div class="ritual-inner">
+      <div class="ritual-copy">
+        <p class="section-label">How to Use</p>
+        <h2>Start lower than you think.</h2>
+        <p>Taste every new bottle on its own before it touches food — a drop on a spoon tells you more than a whole plate ever will. Heat builds the longer it sits, so give it thirty seconds before reaching for the water.</p>
+      </div>
+      <div class="ritual-card">
+        <p class="ritual-quote">"First Light on eggs. Ash Line on literally everything else. Red Coal only on Fridays."</p>
+        <p class="ritual-attr">— a customer who emailed us, unprompted</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="footer">
+  <div class="footer-inner">
+    <div class="footer-main">
+      <p class="footer-logo">
+        <svg class="logo-mark logo-mark--footer" viewBox="0 0 44 52" aria-hidden="true">
+          <polygon class="mark-outer" points="22,4 6,36 38,36"/>
+          <polygon class="mark-mid" points="22,15 12,36 32,36"/>
+          <polygon class="mark-tip" points="22,24 17,36 27,36"/>
+          <rect class="mark-base" x="9" y="42" width="26" height="4" rx="2"/>
+        </svg>
+        Ember <span class="amp">&amp;</span> Ash
+      </p>
+      <h2 class="footer-cta">Try all five before you commit to one.</h2>
+      <a href="#" class="btn btn-primary btn-large">Get the Sampler Pack — $54</a>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <p class="footer-col-title">Contact</p>
+        <a href="mailto:hello@emberandash.co">hello@emberandash.co</a>
+        <span>Portland, OR</span>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Shop</p>
+        <a href="#lineup">Full Lineup</a>
+        <a href="#">Gift Sets</a>
+        <a href="#">Wholesale</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Follow</p>
+        <a href="#">Instagram</a>
+        <a href="#">Newsletter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Ember &amp; Ash Hot Sauce Co. All rights reserved.</span>
+    <span>Made in a kitchen, not a lab.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
